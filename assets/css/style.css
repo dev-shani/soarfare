@@ -1,0 +1,92 @@
+/* 
+ Primary blue: #85c1e9
+*/
+
+
+/* ===================== Generic Classes ========================= */
+
+
+.text-blue{
+    color: #85c1e9 !important;
+}
+
+
+.bg-blue{
+    background-color: #85c1e9 !important;
+}
+
+section{
+    padding: 50px 0px;
+}
+
+.za_intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2.za_intro_title {
+    font-size: 50px;
+}
+
+
+/* =================== Header ======================== */
+
+header.za_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+.za_nav .nav-left .nav-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.za_nav .nav-right .nav .link {
+    margin: 0px 10px;
+}
+
+.za_nav .nav-right .nav .link a {
+    color: #323232;
+}
+
+.za_nav .nav-right .nav .link a::after {content: "";background: #000;display: block;min-height: 2px;width: 0;transition: .3s ease;}
+
+.za_nav .nav-right .nav .link a:hover::after {
+    width: 100%;
+    transition: .3s ease;
+}
+
+.za_nav .nav-right .nav .link a:hover {
+    text-decoration: none;
+}
+
+
+/* =================== Hero Section ================= */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/hero_bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.za_sub-card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+}
