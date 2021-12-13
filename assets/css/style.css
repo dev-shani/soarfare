@@ -112,7 +112,7 @@ header.za_nav {
 /* =================== Hero Section ================= */
 
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/hero_bg1.jpg);
+    /* background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/hero_bg1.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,6 +122,16 @@ header.za_nav {
     align-items: center;
     text-align: center;
     color: #fff;
+    overflow: hidden;
+}
+
+video.hero_video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 
 h1.hero-title {
@@ -132,7 +142,7 @@ h1.hero-title {
 p.hero-descp {font-size: 20px;margin-bottom: 40px;}
 
 .za_sub-card {
-    background: #fff;
+    background: #ffffffe6;
     padding: 20px;
     text-align: center;
     color: #000;
