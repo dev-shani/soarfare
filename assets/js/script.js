@@ -1,5 +1,9 @@
 $(document).ready(() => {
-    console.log('Jquery Ready');
+    $(document).on('click', '.overimage', function(){
+		$(this).addClass('d-none');
+		$(this).next('.embed-responsive').removeClass('d-none');
+		$("#yt")[0].src += "?autoplay=1";
+	})
 
 
 

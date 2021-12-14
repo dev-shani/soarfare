@@ -232,6 +232,51 @@ span.icon-box {
 }
 
 
+/* ===================== Video section ====================== */
+
+.video-section{
+     background: url(../images/hero_bg1.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     min-height: 600px;
+}
+
+.video_glass{
+         /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overimage{
+    cursor: pointer;
+    min-height: 600px;
+}
+
+
+.overimage i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+
 /* ===================== Testimonials section ====================== */
 
 .testimonial-section {
@@ -292,7 +337,38 @@ span.icon-box {
 /* ==================== Blogs section ======================= */
 
 .blog_card {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     border: 1px solid #e9e9e9;
     padding: 20px 10px;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    min-height: 270px;
+    color: #fff;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    padding: 20px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+
+.blog_card:hover .overlay{
+    top: 0;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
