@@ -383,3 +383,40 @@ span.icon-box {
     -ms-transition: .5s ease;
     -o-transition: .5s ease;
 }
+
+
+/* =============== Search Page ==================== */
+
+.search-box {
+    padding: 50px 20px;
+    backdrop-filter: blur(20px) saturate(0.5);
+    border-radius: 10px;
+    background-color: #4169e13d;
+    box-shadow: 0px 0px 35px #ffffff45;
+}
+
+.st-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.st-card .class_dropdown {
+    display: none;
+}
+
+.st-card{
+    margin: 5px;
+}
+
+.st-card label{
+    margin-left: 10px;
+}
+.st-card {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
