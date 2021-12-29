@@ -400,6 +400,7 @@ span.icon-box {
     align-items: center;
     justify-content: center;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .st-card .class_dropdown {
@@ -414,9 +415,61 @@ span.icon-box {
     margin-left: 10px;
 }
 .st-card {
-    width: 100%;
+    width: fit-content;
     padding: 10px 5px;
     border-radius: 5px;
     border: none;
     margin: 10px;
 }
+
+.multi-tour{
+    display: none;
+}
+
+.cls_dd-menu{
+    display: none;
+}
+
+.cls_dd input {
+    border: none;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cls_dd input:disabled{
+    background-color: #fff;
+}
+
+.cls_dd button {
+    background: royalblue;
+    color: #fff;
+    border: none;
+    width: 40px;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.cls_dd-menu {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 10px;
+    top: -300px;
+}
+
+
+button.btn-search {
+    background: royalblue;
+    border: none;
+    padding: 7px 50px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto 0px auto;
+}
+
