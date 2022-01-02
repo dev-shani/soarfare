@@ -387,12 +387,26 @@ span.icon-box {
 
 /* =============== Search Page ==================== */
 
+.search-section{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/hero_bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
 .search-box {
     padding: 50px 20px;
-    backdrop-filter: blur(20px) saturate(0.5);
     border-radius: 10px;
     background-color: #4169e13d;
     box-shadow: 0px 0px 35px #ffffff45;
+    backdrop-filter: blur(3px) saturate(12%);
 }
 
 .st-form {

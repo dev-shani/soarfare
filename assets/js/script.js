@@ -63,7 +63,9 @@ $(document).ready(() => {
 	})
 
 	$(document).on('click','.btn-add-tour', function(){
-		$(this).parents('.tour-ctrl').parents('.multi-tour').find('.st-form').first().clone().appendTo('.tour-append')
+		if($('.tour-append').children().length < 3){
+			$(this).parents('.tour-ctrl').parents('.multi-tour').find('.st-form').first().clone().appendTo('.tour-append');
+		}
 	})
 	
 	$(document).on('click','.btn-remove-tour', function(){
