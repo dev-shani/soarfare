@@ -62,13 +62,48 @@ $(document).ready(() => {
 		$(this).next('input').val((num).toString());
 	})
 
+	// $(document).on('click','.btn-add-tour', function(){
+	// 	let html = `<div class="st-form">
+	// 	<div class="st-card_mt">
+	// 		<input class="form-control" type="text" name="" id="" placeholder="From">
+	// 	</div>
+	// 	<div class="st-card_mt">
+	// 		<input class="form-control" type="text" name="" id="" placeholder="To">
+	// 	</div>
+	// 	<div class="st-card_mt">
+	// 		<input class="form-control mt_date" type="date" name="" id="">
+	// 	</div>
+	// 		<span class="btn-remove-tour"><i class="fa fa-times"></i></span>
+		
+	// </div>`;
+	// 	if($('.tour-append').children().length < 3){
+	// 		$('.tour-append').append(html);
+	// 	}
+	// })
+
+
 	$(document).on('click','.btn-add-tour', function(){
-		if($('.tour-append').children().length < 3){
-			$(this).parents('.tour-ctrl').parents('.multi-tour').find('.st-form').first().clone().appendTo('.tour-append');
+		if($('.tour-append').children().length < 4){
+			$(this).parents('.tour-ctrl').parents('.multi-tour').find('.st-form').last().clone().appendTo('.tour-append');
 		}
 	})
 	
 	$(document).on('click','.btn-remove-tour', function(){
-		$(this).parents('.tour-ctrl').prev('.tour-append').children().last().remove();
+		console.log($('.tour-append').children().length);
+			if($('.tour-append').children().length > 1){
+				$(this).parents('.st-form').remove();
+			}
 	})
+
+	$(document).on('change','.mt_date', adjustDate)
+	function adjustDate(){ 
+		console.log($(this).parents('.st-form').nextAll('.st-form').find('.mt_date').val($(this).val()));
+	 }
+	
+	 $(document).on('change','.mt_date:first-child', setDateLimit);
+
+	 function setDateLimit(){
+		$(this).parents('.st-form').nextAll('.st-form').find('.mt_date').attr('min', $(this).val())
+	 }
 })
+

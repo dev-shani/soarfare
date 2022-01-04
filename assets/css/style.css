@@ -402,8 +402,11 @@ span.icon-box {
 }
 
 .search-box {
-    padding: 50px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     background-color: #4169e13d;
     box-shadow: 0px 0px 35px #ffffff45;
     backdrop-filter: blur(3px) saturate(12%);
@@ -414,7 +417,7 @@ span.icon-box {
     align-items: center;
     justify-content: center;
     text-align: left;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .st-card .class_dropdown {
@@ -434,6 +437,13 @@ span.icon-box {
     border-radius: 5px;
     border: none;
     margin: 10px;
+}
+
+.st-card_mt {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
 }
 
 .multi-tour{
