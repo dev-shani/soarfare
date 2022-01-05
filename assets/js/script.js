@@ -105,5 +105,9 @@ $(document).ready(() => {
 	 function setDateLimit(){
 		$(this).parents('.st-form').nextAll('.st-form').find('.mt_date').attr('min', $(this).val())
 	 }
+
+	 $(document).on('click','.show_ticket_details', function(){
+		 $(this).parents('.body').next('.ticket_details').slideToggle();
+	 })
 })
 

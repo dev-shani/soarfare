@@ -503,6 +503,85 @@ button.btn-search {
 }
 
 
+/* ================ Search result ================== */
+
+.ticket_wrapper{
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.ticket_wrapper:hover{
+    border-color: #eee;
+    transition: .3s ease;
+    box-shadow: 0px 0px 25px #eee;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.ticket {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px 5px 0px 0px; */
+}
+
+.ticket .header {
+    padding: 10px 20px;
+    /* background: #f7f7f7; */
+    /* border-radius: 5px 5px 0px 0px; */
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.ticket_details .footer {
+    background: royalblue;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.ticket .body{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket span.airline {
+    font-size: 12px;
+}
+
+.ticket .footer{
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket_details{
+    display: none;
+}
+
+.ticket_cta {
+    padding: 20px;
+    /* background: #f7f7f7; */
+    /* border-radius: 0px 0px 5px 5px; */
+    /* border: 1px solid #ccc; */
+    text-align: right;
+}
+
+.ticket_cta .btn_flight-book {
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px 28px;
+    border-radius: 3px;
+}
+
+
 @media (max-width: 800px){
     .single-tour .st-form{
         flex-wrap: wrap;
