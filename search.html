@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/vendor/owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/vendor/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>SoarFare</title>
   </head>
@@ -261,11 +262,11 @@
                                 </div>
                                 <div class="st-card_mt">
                                     <label for="">Travel Date</label>
-                                    <input class="form-control" type="date" name="" id="">
+                                    <input class="form-control datepicker" type="date" name="" id="">
                                 </div>
                                 <div class="st-card_mt return">
                                     <label for="">Return Date</label>
-                                    <input class="form-control" type="date" name="" id="">
+                                    <input class="form-control datepicker" type="date" name="" id="">
                                 </div>
                                 <div class="st-card_mt position-relative">
                                     <label for="">Seats &amp; Classes</label>
@@ -328,7 +329,7 @@
                                         <input class="form-control" type="text" name="" id="" placeholder="To">
                                     </div>
                                     <div class="st-card_mt">
-                                        <input class="form-control mt_date" placeholder="Depart" type="date" name="" id="">
+                                        <input class="form-control mt_date datepicker" placeholder="Depart" type="date" name="" id="">
                                     </div>
                                         <span class="btn-remove-tour"><i class="fas fa-times"></i></span>
                                     
@@ -401,7 +402,7 @@
     </section>
 
     <section class="container-fluid search-result-section">
-        <div class="container">
+        <div class="">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-sm-12">
                     <div class="alert alert-primary text-center text-white mb-5">
@@ -411,7 +412,52 @@
             </div>
             <div class="row">
                 <div class="col-md-2 col-sm-12">
-                    
+                    <div class="search-result-filters">
+                        <h5 class="srf-title">Airlines</h5>
+                        <div class="py-2">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" class="srf-check">
+                                <lable class="small">All Airline</lable>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" class="srf-check">
+                                <lable class="small">Pakistan International Airlines</lable>
+                            </div>
+                        </div>
+                        <h5 class="srf-title">Stops</h5>
+                        <div class="py-2">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" class="srf-check">
+                                <lable class="small">Non-stop</lable>
+                            </div>
+                        </div>
+                        <h5 class="srf-title">To Destination</h5>
+                        <div class="py-3">
+                            <div class="">
+                                <span class="small">Departure time to Destination</span>
+                                <p><span class="font-weight-bold">Time:</span><br><span class="tm1">11:00pm</span> - <span class="tm2">12:00pm</span></p>
+                                <div class="ui_slider"></div>
+                            </div>
+                            <div class="">
+                                <span class="small">Arival time to Destination</span>
+                                <p><span class="font-weight-bold">Time:</span><br><span class="tm1">11:00pm</span> - <span class="tm2">12:00pm</span></p>
+                                <div class="ui_slider"></div>
+                            </div>
+                        </div>
+                        <h5 class="srf-title">From Destination</h5>
+                        <div class="py-3">
+                            <div class="">
+                                <span class="small">Departure time from Destination</span>
+                                <p><span class="font-weight-bold">Time:</span><br><span class="tm1">11:00pm</span> - <span class="tm2">12:00pm</span></p>
+                                <div class="ui_slider"></div>
+                            </div>
+                            <div class="">
+                                <span class="small">Arival time from Destination</span>
+                                <p><span class="font-weight-bold">Time:</span><br><span class="tm1">11:00pm</span> - <span class="tm2">12:00pm</span></p>
+                                <div class="ui_slider"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div class="ticket_wrapper">
@@ -653,8 +699,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-12">
-                    
+                <div class="col-md-2 col-sm-12">
+                    <div class="flight-summry">
+                        <h4 class="mb-5">Flights Summry</h4>
+                        <div class="d-flex justify-content-between">
+                            <div class="fs-point-card d-flex align-items-center">
+                                <span class="small mr-2">ISL</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <span class="small ml-2">LHE</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="fs_points mr-2">60</span>
+                                <span class="small">pts</span>
+                            </div>
+                        </div>
+                        <div class="fs-point-card d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <span class="small mr-2">LHE</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                                <span class="small ml-2">NYC</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="fs_points mr-2">80</span>
+                                <span class="small">pts</span>
+                            </div>
+                        </div>
+                        <div class="points-total">
+                            <p class="text-center mb-0">TOTAL</p>
+                            <span class="fs-total">120</span>
+                        </div>
+                        <div class="fs-cta">
+                            <button>Book</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -663,6 +740,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/owlcarousel/dist/owl.carousel.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

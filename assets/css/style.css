@@ -39,6 +39,14 @@ section{
     padding: 50px 0px;
 }
 
+.form-control[readonly]{
+    background-color: #fff;
+}
+
+.form-control:disabled{
+    background-color: rgb(129, 129, 129);
+}
+
 .za_intro {
     text-align: center;
     margin-bottom: 50px;
@@ -581,10 +589,92 @@ button.btn-search {
     border-radius: 3px;
 }
 
+.search-result-filters {
+    background: #3b3b9b;
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: #fff;
+    height: auto;
+    box-shadow: 0px 0px 27px #85c1e9;
+}
+
+h5.srf-title {
+    margin-bottom: 10px;
+    border-bottom: 3px dashed;
+    display: inline-block;
+    color: #000;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default{
+    background-color: #86c2e9;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.ui-slider .ui-slider-range{
+    background-color: #1a1a1a;
+}
+
+.ui-widget-content{
+    border: none !important;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+.flight-summry {
+    background: #3b3b9b;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 7px solid #0c0c0c;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 27px #3b3b9b5c;
+}
+
+span.fs-total {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00ebff;
+}
+
+.fs-cta button {
+    background: linear-gradient(45deg, #060606, #2b2b5c);
+    border: none;
+    color: #fff;
+    box-shadow: 0px 0px 5px #00000030;
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fs-cta button:hover {
+    background: linear-gradient(45deg, #3b3b9b, #85c1e9);
+}
+
+.points-total {
+    border-top: 2px dashed;
+    margin: 20px 0px;
+}
+
+
+
 
 @media (max-width: 800px){
     .single-tour .st-form{
         flex-wrap: wrap;
     }
 }
+/* ================== Plugin css =========================== */
+
 

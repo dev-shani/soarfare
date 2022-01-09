@@ -109,5 +109,18 @@ $(document).ready(() => {
 	 $(document).on('click','.show_ticket_details', function(){
 		 $(this).parents('.body').next('.ticket_details').slideToggle();
 	 })
+
+	 $( ".ui_slider" ).slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [ 75, 300 ],
+		slide: function( event, ui ) {
+		  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		}
+	  });
+	  $( "#amount" ).val( "$" + $( ".ui_slider" ).slider( "values", 0 ) +
+		" - $" + $( ".ui_slider" ).slider( "values", 1 ) );
+
 })
 
