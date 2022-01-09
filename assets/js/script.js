@@ -85,6 +85,7 @@ $(document).ready(() => {
 	$(document).on('click','.btn-add-tour', function(){
 		if($('.tour-append').children().length < 4){
 			$(this).parents('.tour-ctrl').parents('.multi-tour').find('.st-form').last().clone().appendTo('.tour-append');
+			$('.mt_date:first-child').parents('.st-form').nextAll('.st-form').find('.mt_date').attr('min', $('.mt_date:first-child').val())
 		}
 	})
 	
