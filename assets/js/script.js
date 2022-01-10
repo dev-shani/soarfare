@@ -111,6 +111,26 @@ $(document).ready(() => {
 		 $(this).parents('.body').next('.ticket_details').slideToggle();
 	 })
 
+	 $(document).on('click', '.filter_close', function(){
+		 $('.search-result-filters').css('transform','translateX(-100%)');
+		 $('.search-result-filters').css('transition','.3s ease');
+	 })
+	 
+	 $(document).on('click', '.btn-filter', function(){
+		 $('.search-result-filters').css('transform','translateX(0%)');
+		 $('.search-result-filters').css('transition','.3s ease');
+	 })
+	 
+	 $(document).on('click', '.fs_close', function(){
+		 $('.flight-summry').css('transform','translateX(100%)');
+		 $('.flight-summry').css('transition','.3s ease');
+	 })
+	 
+	 $(document).on('click', '.btn-fs', function(){
+		 $('.flight-summry').css('transform','translateX(0%)');
+		 $('.flight-summry').css('transition','.3s ease');
+	 })
+
 	 $( ".ui_slider" ).slider({
 		range: true,
 		min: 0,
