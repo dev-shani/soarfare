@@ -130,6 +130,16 @@ $(document).ready(() => {
 		 $('.flight-summry').css('transform','translateX(0%)');
 		 $('.flight-summry').css('transition','.3s ease');
 	 })
+	 
+	 $(document).on('click', '.mbl_menu-btn', function(){
+		 $('.mbl_menu').css('transform','translateY(0%)');
+		 $('.mbl_menu').css('transition','.3s ease');
+	 })
+	 
+	 $(document).on('click', '.mbl_menu_close', function(){
+		 $('.mbl_menu').css('transform','translateY(100%)');
+		 $('.mbl_menu').css('transition','.3s ease');
+	 })
 
 	 $( ".ui_slider" ).slider({
 		range: true,
