@@ -633,7 +633,7 @@ button.btn-search {
     text-align: right;
 }
 
-.ticket_cta .btn_flight-book {
+.btn_flight-book {
     background-color: royalblue;
     color: #fff;
     padding: 5px 28px;
@@ -761,6 +761,51 @@ span.fs-total {
     display: none;
 }
 
+
+.tk_from {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tk_from .from_time {
+    font-size: 39px;
+}
+
+.tk_to {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tk_to .to_time {
+    font-size: 39px;
+}
+
+.tk_details {
+    margin: 15px 0px;
+}
+
+.tk_wrapper {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e5e5e5;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.tk_wrapper:hover{
+    box-shadow: 0px 0px 7px #d5d5d5;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
 
 
 
