@@ -168,6 +168,86 @@ header.za_nav {
 }
 
 
+/* =================== Footer Section ================= */
+
+.footer-section {
+    background: linear-gradient(45deg, black, #000000de);
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #1c1c1c;
+}
+
+.footer_card h3 {
+    color: #85c1e9;
+    border-bottom: 3px dashed;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.footer_card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_card ul li {
+    margin: 10px 0px;
+}
+
+.footer_card ul li a {
+    color: #666565;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.footer_card ul li a:hover {
+    color: #fff;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+.footer_card ul li a {
+    color: #666565;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.footer_card ul li a:hover {
+    color: #fff;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+form.sub_form {
+    display: flex;
+    align-items: center;
+}
+
+input.sub_inp {
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+input.sub_btn {
+    padding: 7px 30px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    background: linear-gradient(45deg, #85c1e9, #3b3b9a);
+    transition: .3s ease;
+}
+
+input.sub_btn:hover {
+    transition: .3s ease;
+    box-shadow: 0px 0px 10px #85c1e9;
+}
+
+
+
 /* =================== Hero Section ================= */
 
 .hero-section {
@@ -787,6 +867,7 @@ span.fs-total {
 }
 
 .tk_wrapper {
+    background-color: #fff;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
